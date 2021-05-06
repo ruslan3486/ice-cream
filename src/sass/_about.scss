@@ -1,0 +1,169 @@
+.about {
+  background-color: var(--section_background);
+  padding-top: var(--section-pt);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: 93%;
+  background-position-x: 50%;
+
+  @media screen and (max-width: 767px) {
+    background-image: url('../images/about/mobile/milk.png');
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/about/mobile/milk@2.png');
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url('../images/about/desktop/milk.png');
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/about/desktop/milk@2.png');
+    }
+  }
+}
+
+.about__lable {
+  margin-bottom: 15px;
+
+  font-family: var(--title_heading);
+  font-size: 18px;
+  line-height: 1.17;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffa5ba;
+}
+
+.about__title {
+  margin-bottom: 25px;
+
+  font-family: var(--title_heading);
+  font-size: 34px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--accent_color);
+}
+
+.about__list-wrapper {
+  @media screen and (max-width: 767px) {
+    padding-left: 30px;
+  }
+}
+
+.about__list-item {
+  &:first-child {
+    width: 240px;
+    margin-top: 45px;
+    margin-bottom: 30px;
+
+    font-weight: 500;
+    line-height: 1.62;
+
+    color: var(--black);
+  }
+
+  &:nth-child(2) {
+    @media screen and (max-width: 767px) {
+      width: 231px;
+    }
+  }
+
+  margin-bottom: 17px;
+  font-weight: 500;
+  line-height: 1.62;
+}
+.about__button {
+  min-width: 176px;
+  height: 44px;
+  border: 1px solid transparent;
+  transform: scale(1);
+  transition: transform var(--main-transition);
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
+}
+
+//tablet
+
+@media screen and (min-width: 768px) {
+  .about__lable {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+
+  .about__title {
+    font-size: 48px;
+    line-height: 1.15;
+  }
+
+  .about__wrapper {
+    display: flex;
+    margin-top: 50px;
+  }
+
+  .about__image {
+    margin-right: 17px;
+  }
+
+  .about__list-item {
+    font-size: 14px;
+    line-height: 1.76;
+
+    &:first-child {
+      width: 360px;
+      margin-top: 35px;
+      margin-bottom: 25px;
+    }
+    &:nth-child(2) {
+      width: 350px;
+    }
+  }
+  .about__button {
+    margin-top: 40px;
+  }
+}
+
+//desktop
+
+@media screen and (min-width: 1280px) {
+  .about {
+    background-position-y: 130%;
+  }
+
+  .about__lable {
+    font-size: 30px;
+    line-height: 1.13;
+  }
+
+  .about__title {
+    font-size: 58px;
+    line-height: 1.14;
+    letter-spacing: 0.06em;
+  }
+
+  .about__image {
+    margin-right: 74px;
+  }
+
+  .about__list-item {
+    line-height: 1.94;
+    &:first-child {
+      width: 450px;
+      margin-top: 55px;
+      margin-bottom: 35px;
+      font-size: 16px;
+      line-height: 1.76;
+    }
+    &:nth-child(2) {
+      width: 445px;
+    }
+  }
+
+  .about__button {
+    margin-top: 45px;
+  }
+}

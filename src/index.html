@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IceСream</title>
+    <link rel="icon" type="image/png" href="./images/favicon.png" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <!-- шапка сайта -->
+    <include src="./partials/header.html"></include>
+
+    <main class="main-page">
+      <!-- секция героя -->
+      <include src="./partials/hero.html"></include>
+
+      <!-- предложения товара  -->
+      <include src="./partials/product.html"></include>
+
+      <!-- производство продуктов -->
+      <include src="./partials/about.html"></include>
+      <include src="./partials/advantages.html"></include>
+
+      <!-- галерея  -->
+      <include src="./partials/gallery.html"></include>
+
+      <!-- отзывы от клиентов -->
+      <include src="./partials/mention.html"></include>
+
+      <!-- контакты -->
+      <include src="./partials/contact.html"></include>
+
+      <!-- mobile menu -->
+      <div class="mobile-menu" data-menu>
+        <button type="button" class="mobile-menu__btn-close" data-menu-close>
+          <svg class="mobile-menu__cross">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <button type="button" class="btn">
+          Buy now
+          <svg class="btn__icon">
+            <use href="./images/icons.svg#icon-arrow"></use>
+          </svg>
+        </button>
+
+        <ul class="mobile-menu__list list">
+          <li class="mobile-menu__item">
+            <a href="./index.html" class="menu__link link active-link">Home</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#quote" class="mobile-menu__link link">About us</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#about" class="mobile-menu__link link">How it’s made?</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#product" class="mobile-menu__link link">Our products</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#contacts" class="mobile-menu__link link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <!-- футер сайта -->
+    <include src="./partials/footer.html"></include>
+    <include src="./partials/modal.html"></include>
+    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+    <div id="toTop">
+      <svg class="top-icon">
+        <use href="./images/icons.svg#icon-uparrow"></use>
+      </svg>
+    </div>
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="./js/top-button.js"></script>
+    <script src="./js/scroll-page.js"></script>
+    <script src="./index.js"></script>
+    <script src="./js/modal-franchise.js"></script>
+    <script src="./js/modal-locations.js"></script>
+    <script src="./js/menu-close.js"></script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+.container {
+  width: 310px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  // outline: 1px solid tomato;
+}
+
+// tablet
+@media screen and (min-width: 768px) {
+  .container {
+    width: 730px;
+
+    .page-footer & {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+// desktop
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1080px;
+  }
+}

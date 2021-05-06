@@ -1,0 +1,38 @@
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+
+// Стили для файла с примером HTML-фрагмента
+// @import './example';
+
+// базовые стили
+@import './common';
+@import './container';
+
+// утилиты
+@import './variables';
+@import './visually-hidden';
+@import './modal-contacts';
+
+// компоненты
+@import './title';
+@import './modal';
+@import './btn';
+@import './slider-nav';
+@import './mobile-menu';
+@import './navigation-menu';
+
+// оформление страници
+@import './header';
+@import './hero';
+//Секция product
+@import './product';
+
+@import './about';
+@import './advantages';
+@import './mention';
+@import './contacts';
+@import './gallery';
+@import './footer';
+@import './social-list';

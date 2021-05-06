@@ -1,0 +1,68 @@
+body {
+  color: var(--main_text);
+  font-family: var(--main-font);
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+/* svg {
+  fill: currentColor;
+} */
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+#toTop {
+  display: none;
+  background-color: var(--hero_background);
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  transition: background-color 0.5s;
+  z-index: 101;
+}
+#toTop:hover {
+  cursor: pointer;
+  background-color: var(--accent_color);
+}
+.top-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 39px;
+  width: 39px;
+  fill: azure;
+}

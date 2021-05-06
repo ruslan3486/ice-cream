@@ -1,0 +1,106 @@
+<section class="hero">
+  <div class="container">
+    <div class="circle animate__animated animate__zoomInLeft"></div>
+
+    <div class="ice-cream">
+      <picture>
+        <source
+          srcset="./images/hero/desktop/ice_cream.png 1x, ./images/hero/desktop/ice_cream@2.png 2x"
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="./images/hero/tablet/ice_cream.png 1x, ./images/hero/tablet/ice_cream@2.png 2x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="./images/hero/mobile/ice_cream.png 1x, ./images/hero/mobile/ice_cream@2.png 2x"
+          media="(min-width: 310px)"
+        />
+        <img
+          class="animate__animated animate__flipInY animate__delay-1s"
+          src="./images/hero/mobile/ice_cream.png"
+          alt="ice cream"
+        />
+      </picture>
+    </div>
+
+    <div class="hero__container-description">
+      <h1 class="hero__title">
+        ice cream made with <span class="hero__accent-text">passion</span>
+      </h1>
+      <ul class="hero__btn-list list">
+        <li class="hero__btn">
+          <a href="#product" class="hero__btn-theme-dark link">Products</a>
+        </li>
+        <li class="hero__btn">
+          <a href="#about" class="hero__btn-theme-light link">How it’s made?</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="bio-eco">
+      <picture>
+        <source
+          srcset="./images/hero/desktop/bio_eco.png 1x, ./images/hero/desktop/bio_eco@2.png 2x"
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="./images/hero/tablet/bio_eco.png 1x, ./images/hero/tablet/bio_eco@2.png 2x"
+          media="(min-width: 768px)"
+        />
+        <img
+          class="animate__animated animate__shakeX"
+          src="./images/hero/tablet/bio_eco.png"
+          alt="milk"
+        />
+      </picture>
+      <div>
+        <p class="bio-eco__description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et
+        </p>
+        <button class="bio-eco__button" type="button">
+          <svg class="bio-eco__icon">
+            <use href="./images/icons.svg#arrow"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="girl">
+      <picture>
+        <source
+          srcset="./images/hero/desktop/hero_girl.png 1x, ./images/hero/desktop/hero_girl@2.png 2x"
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="./images/hero/tablet/hero_girl.png 1x, ./images/hero/tablet/hero_girl@2.png 2x"
+          media="(min-width: 768px)"
+        />
+        <img
+          class="animate__animated animate__jackInTheBox animate__delay-2s"
+          src="./images/hero/tablet/hero_girl.png"
+          alt="girl"
+        />
+      </picture>
+    </div>
+
+    <div class="box">
+      <div class="box__cafes">
+        <svg class="box__icon-top">
+          <use href="./images/icons.svg#ellipse"></use>
+        </svg>
+        <p class="box__numbering">16</p>
+        <p class="box__description">cafes</p>
+      </div>
+
+      <div class="box__food">
+        <svg class="box__icon-bottom">
+          <use href="./images/icons.svg#ellipse"></use>
+        </svg>
+        <p class="box__numbering">23</p>
+        <p class="box__description">food trucks</p>
+      </div>
+    </div>
+  </div>
+</section>

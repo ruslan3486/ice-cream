@@ -1,0 +1,269 @@
+.contacts {
+  background-color: var(--section_background);
+  font-weight: 500;
+  font-size: 12px;
+  background-image: linear-gradient(to bottom, var(--white) 84px, var(--section_background) 0);
+}
+
+.contact-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: calc(100% / 3 - 20px);
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 54px;
+  &__box {
+    background: var(--white);
+    width: 220px;
+    height: 427px;
+    box-shadow: 0px 8px 30px var(--shadow_contacts);
+    border-radius: 24px;
+    padding: 40px 20px;
+  }
+  &__box:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 16px;
+    background: var(--card_background_coffee);
+    border-radius: 4px;
+
+    line-height: 1.83;
+    color: var(--white);
+    margin-bottom: 25px;
+    &-green {
+      background: var(--card_background_mint);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 130px;
+      height: 16px;
+      border-radius: 4px;
+      line-height: 1.83;
+      color: var(--white);
+      margin-bottom: 25px;
+    }
+  }
+  &__city {
+    line-height: 1.83;
+    color: var(--black);
+    margin-bottom: 10px;
+  }
+  &__desc {
+    margin-bottom: 25px;
+    letter-spacing: 0em;
+  }
+}
+
+.contact-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &__locations {
+    width: 160px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.3;
+    border-style: none;
+    cursor: pointer;
+    color: var(--white);
+    background: var(--contact-btn);
+    border-radius: 22px;
+    margin-bottom: 10px;
+    transform: scale(1);
+    transition: transform var(--main-transition);
+    .btn__icon {
+      fill: var(--white);
+    }
+    &:hover,
+    &:focus {
+      transform: scale(1.1);
+    }
+  }
+  &__franchise {
+    width: 160px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.3;
+    letter-spacing: 0.04em;
+    border-style: none;
+    cursor: pointer;
+    color: var(--accent_color);
+    background: var(--white);
+    border-radius: 22px;
+    margin-bottom: 66px;
+    transform: scale(1);
+    transition: transform var(--main-transition), background-color var(--main-transition);
+    &:hover,
+    &:focus {
+      transform: scale(1.1);
+      background-color: var(--accent-btn);
+    }
+  }
+}
+
+.work-time {
+  margin-bottom: 10px;
+}
+.schedule {
+  border-top: 1px solid var(--border_clr);
+  border-bottom: 1px solid var(--border_clr);
+  padding: 25px 0;
+  line-height: 1.83;
+
+  &__day {
+    color: var(--black);
+  }
+  &__time {
+    color: var(--time-clr);
+  }
+}
+.contact-link {
+  margin-top: 25px;
+  &__path {
+    color: inherit;
+  }
+  &__path:hover,
+  &__path:focus {
+    color: var(--time-clr);
+  }
+}
+@media screen and (min-width: 768px) {
+  .contacts {
+    background-image: linear-gradient(to bottom, var(--white) 78px, var(--section_background) 0);
+  }
+
+  .contact-list {
+    margin-bottom: 81px;
+    font-size: 14px;
+
+    &__box {
+      width: 220px;
+      height: 544px;
+      padding: 50px 31px;
+    }
+    &__box:not(:last-child) {
+      margin-bottom: 0px;
+      margin-right: 20px;
+    }
+    &__item {
+      font-size: 16px;
+
+      width: 73px;
+      height: 28px;
+      margin-bottom: 30px;
+      &-green {
+        font-size: 16px;
+
+        width: 138px;
+        height: 28px;
+        margin-bottom: 30px;
+      }
+    }
+    &__city {
+      margin-bottom: 14px;
+    }
+    &__desc {
+      margin-bottom: 30px;
+    }
+  }
+
+  .contact-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    &__locations {
+      width: 191px;
+      margin-bottom: 80px;
+      margin-right: 15px;
+    }
+    &__franchise {
+      width: 174px;
+      margin-bottom: 80px;
+    }
+  }
+  .work-time {
+    margin-bottom: 16px;
+  }
+  .schedule {
+    padding: 30px 0;
+  }
+
+  .contact-link {
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contacts {
+    background-position: center;
+    background-position-y: 102px, 0px;
+    background-repeat: no-repeat;
+    background-image: url(../images/contacts/contactsbg.png),
+      linear-gradient(to bottom, var(--white) 102px, var(--section_background) 0);
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .contacts {
+      background-image: url(../images/contacts/contactsbg@2.png),
+        linear-gradient(to bottom, var(--white) 102px, var(--section_background) 0);
+    }
+  }
+  .contact-list {
+    font-size: 16px;
+    margin-bottom: 86px;
+    &__box {
+      width: 330px;
+      height: 572px;
+      padding: 51px 43px 62px;
+    }
+    &__box:not(:last-child) {
+      margin-right: 30px;
+    }
+    &__item {
+      margin-bottom: 32px;
+      &-green {
+        margin-bottom: 32px;
+      }
+    }
+    &__city {
+      margin-bottom: 10px;
+    }
+    &__desc {
+      margin-bottom: 32px;
+    }
+  }
+
+  .contact-btn {
+    &__locations {
+      width: 198px;
+      margin-bottom: 82px;
+    }
+    &__franchise {
+      width: 180px;
+      margin-bottom: 82px;
+    }
+  }
+  .work-time {
+    margin-bottom: 15px;
+  }
+  .schedule {
+    padding: 32px 0;
+  }
+
+  .contact-link {
+    margin-top: 32px;
+  }
+}
